@@ -4,7 +4,9 @@ const out = document.querySelector(".out");
 
 enter.addEventListener("click", () => {
   const task = document.querySelector("#task").value;
+
   const cont = document.createElement("div");
+  cont.setAttribute("class", "green");
   cont.innerHTML = task;
   out.appendChild(cont);
 });
