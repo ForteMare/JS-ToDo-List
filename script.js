@@ -1,4 +1,4 @@
-// IO Controls
+// IO Get
 let returnValueOf = () => document.querySelector("#task").value;
 const enter = document.querySelector("#enter"); // Button
 const out = document.querySelector(".out");
