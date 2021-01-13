@@ -2,12 +2,23 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-size: 14px;
+  font-size: 18px;
   font-style: italic;
 }
 
 .container {
-  margin: 8% 30vw 0 30vw;
+  margin: 5% 33vw 0 33vw;
+}
+
+.in {
+  border: 1px solid red;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+}
+
+.out {
+  border: 1px solid green;
 }
 
 .task {
