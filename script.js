@@ -2,6 +2,7 @@
 const inputField = document.querySelector("#task");
 const out = document.querySelector(".out");
 
+// TODO: Code is messy af, clean it up
 inputField.addEventListener("keypress", (e) => {
   if (e.key === "Enter") {
     // Get value of input
