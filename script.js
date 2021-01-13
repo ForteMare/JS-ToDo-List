@@ -15,14 +15,14 @@ enter.addEventListener("click", () => {
   content.setAttribute("class", "task");
   remove.innerHTML = "Remove";
 
-  remove.addEventListener("click", () => {
-    alert("Hi");
-  });
-
   // Add text content
   content.innerHTML = task;
   content.appendChild(remove);
 
   // Add div to parent element
   out.appendChild(content);
+
+  remove.addEventListener("click", () => {
+    content.remove();
+  });
 });
