@@ -8,7 +8,7 @@ inputField.addEventListener("keypress", (e) => {
     // Get input field value
     const todoInput = inputField.value;
 
-    // Clear input field
+    // Clear input field after pressing enter
     inputField.value = "";
 
     // Create a div for text in the to-do
@@ -28,10 +28,16 @@ inputField.addEventListener("keypress", (e) => {
     // Set div style
     todoDiv.setAttribute("class", "todo-style");
 
-    // Append
+    // Append icon to Remove Button
     removeButton.appendChild(icon);
+
+    // Append text div to To-Do div
     todoDiv.appendChild(todoLeft);
+
+    // Append Remove Button to To-Do div
     todoDiv.appendChild(removeButton);
+
+    // Append To-Do div to output container
     outputContainer.appendChild(todoDiv);
 
     removeButton.addEventListener("click", () => {
