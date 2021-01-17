@@ -40,6 +40,7 @@ inputField.addEventListener("keypress", (e) => {
     // Append To-Do div to output container
     outputContainer.appendChild(todoDiv);
 
+    // Add functionality to button to remove parent element
     removeButton.addEventListener("click", () => {
       todoDiv.remove();
     });
