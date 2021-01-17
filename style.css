@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-size: 18px;
+  font-size: 25px;
   font-style: italic;
 }
 
@@ -12,19 +12,19 @@
   border: 1px solid blue;
 }
 
-.in {
+.input {
   border: 1px solid red;
   padding: 10px;
   display: flex;
   justify-content: center;
 }
 
-.out {
+.output {
   border: 1px solid green;
   padding: 10px;
 }
 
-.task {
+.todo-style {
   background-color: lightgray;
   box-shadow: 1px 1px 1px;
   padding: 10px;

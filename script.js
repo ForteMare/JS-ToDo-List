@@ -1,31 +1,29 @@
-// IO Get
-const inputField = document.querySelector("#task");
-const out = document.querySelector(".out");
+// Get HTML objects
+const inputField = document.querySelector("#input-field");
+const outputContainer = document.querySelector(".output");
 
-// TODO: Code is messy af, clean it up
+// Pressing enter on input field
 inputField.addEventListener("keypress", (e) => {
   if (e.key === "Enter") {
-    // Get value of input
-    // const task = returnValueOf();
-    const task = inputField.value;
+    const todoInput = inputField.value;
 
-    // Create div container
-    const content = document.createElement("div");
-    const remove = document.createElement("button");
+    // Create div for a to-do
+    const todoContainer = document.createElement("div");
+    todoContainer.innerHTML = todoInput;
+
+    // Create a button for a to-do
+    const removeButton = document.createElement("button");
+    removeButton.innerHTML = "Remove";
 
     // Set div style
-    content.setAttribute("class", "task");
-    remove.innerHTML = "Remove";
+    todoContainer.setAttribute("class", "todo-style");
 
-    // Add text content
-    content.innerHTML = task;
-    content.appendChild(remove);
+    // Append
+    todoContainer.appendChild(removeButton);
+    outputContainer.appendChild(todoContainer);
 
-    // Add div to parent element
-    out.appendChild(content);
-
-    remove.addEventListener("click", () => {
-      content.remove();
+    removeButton.addEventListener("click", () => {
+      todoContainer.remove();
     });
   }
 });
