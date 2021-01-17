@@ -29,4 +29,15 @@
   box-shadow: 1px 1px 1px;
   padding: 10px;
   margin: 3px;
+
+  animation: fadeIn ease 0.1s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
