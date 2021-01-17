@@ -9,28 +9,31 @@
 .main-container {
   margin: 5% 33vw 0 33vw;
   padding: 10px;
-  border: 1px solid blue;
+
+  border: 1px solid black;
+  border-radius: 4px;
 }
 
 .input-container {
-  border: 1px solid red;
   padding: 10px;
   display: flex;
   justify-content: center;
 }
 
 .output-container {
-  border: 1px solid green;
   padding: 10px;
 }
 
 .todo-style {
-  background-color: lightgray;
-  box-shadow: 1px 1px 1px;
   padding: 10px;
-  margin: 3px;
+  margin-bottom: 6px;
 
-  animation: fadeIn ease 0.1s;
+  background-color: mintcream;
+  border: 1px solid black;
+  /* box-shadow: 1px 1px 1px; */
+  border-radius: 4px;
+
+  animation: fadeIn ease 0.4s;
 }
 
 @keyframes fadeIn {
