@@ -1,6 +1,6 @@
-# JavaScript To-Do List
+# A To-Do List in JavaScript
 
-Showcasing DOM manipulationion with vanilla JS
+DOM manipulationion with vanilla JS
 
 ## Future improvements
 
