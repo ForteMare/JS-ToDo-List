@@ -6,20 +6,20 @@
   font-style: italic;
 }
 
-.container {
+.main-container {
   margin: 5% 33vw 0 33vw;
   padding: 10px;
   border: 1px solid blue;
 }
 
-.input {
+.input-container {
   border: 1px solid red;
   padding: 10px;
   display: flex;
   justify-content: center;
 }
 
-.output {
+.output-container {
   border: 1px solid green;
   padding: 10px;
 }

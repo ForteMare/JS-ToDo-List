@@ -1,6 +1,6 @@
 // Get HTML objects
 const inputField = document.querySelector("#input-field");
-const outputContainer = document.querySelector(".output");
+const outputContainer = document.querySelector(".output-container");
 
 // Pressing enter on input field
 inputField.addEventListener("keypress", (e) => {
@@ -8,22 +8,22 @@ inputField.addEventListener("keypress", (e) => {
     const todoInput = inputField.value;
 
     // Create div for a to-do
-    const todoContainer = document.createElement("div");
-    todoContainer.innerHTML = todoInput;
+    const todoDiv = document.createElement("div");
+    todoDiv.innerHTML = todoInput;
 
     // Create a button for a to-do
     const removeButton = document.createElement("button");
     removeButton.innerHTML = "Remove";
 
     // Set div style
-    todoContainer.setAttribute("class", "todo-style");
+    todoDiv.setAttribute("class", "todo-style");
 
     // Append
-    todoContainer.appendChild(removeButton);
-    outputContainer.appendChild(todoContainer);
+    todoDiv.appendChild(removeButton);
+    outputContainer.appendChild(todoDiv);
 
     removeButton.addEventListener("click", () => {
-      todoContainer.remove();
+      todoDiv.remove();
     });
   }
 });
