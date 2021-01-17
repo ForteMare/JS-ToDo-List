@@ -8,6 +8,9 @@ inputField.addEventListener("keypress", (e) => {
     // Get input field value
     const todoInput = inputField.value;
 
+    // Clear input field
+    inputField.value = "";
+
     // Create a div for text in the to-do
     const todoLeft = document.createElement("div");
     todoLeft.innerHTML = todoInput;
